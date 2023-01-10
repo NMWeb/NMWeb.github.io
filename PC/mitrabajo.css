@@ -1,0 +1,105 @@
+
+html{
+    height: 100%;
+}
+body {
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    background:#fdf3f1;
+  font-family:'sans-serif,Open Sans, Helvetica';/*: 'Mrs Dafoe';*/
+}
+
+
+.container {
+  display: flex;
+  gap: 25px;
+  overflow: scroll;
+  padding: 9% 0 4% 0;
+  position: relative;
+justify-content: center;}
+  .container::-webkit-scrollbar {
+    display: none; }
+
+.polaroid {
+  min-width: 20%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(#fff, #f3f3f3);
+  padding: 16px; }
+  .polaroid:nth-child(even) {
+    transform: rotate(-1deg); }
+  .polaroid:nth-child(odd) {
+    transform: rotate(1deg); }
+  .polaroid__image {
+    padding-bottom: 90%;
+    position: relative;
+    background: #eee;
+    overflow:hidden; }
+    .polaroid__image:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0px;
+      height: 100%;
+      background: black;
+      transform: skew(2deg);
+      transform-origin: top right; }
+    .polaroid__image:before {
+      content: '';
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0px;
+      height: 100%;
+      background: black;
+      transform: skew(-3deg);
+      transform-origin: top left; }
+    .polaroid__image img {
+      object-fit: cover;
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      width: 100%;
+      filter: grayscale(60%) sepia(30%) contrast(100%) hue-rotate(10deg); }
+  .polaroid__description {
+    padding: 16px 12px 36px 12px; }
+
+
+#boton{
+    color:white;
+    
+    background-color:black;/*le añado una cajita*/
+    padding:0.5%;
+    border-radius: 0.5em;/*cajita bordes redondos*/
+ 
+    text-decoration: none;/*le quito el subrayado al texto de la cajita*/
+}
+#boton:hover{
+    background-color:rosybrown;
+}/*cuando pasa por encima el ratón me cambia de color*/
+
+a{
+    color:rosybrown;
+    font-weight: bond;
+}
+a:active{
+    color:black;
+}
+/*# sourceMappingURL=style.css.map */
+
+
+@media (max-width: 900px) {
+    .container {
+        display: block;
+    }
+}
+

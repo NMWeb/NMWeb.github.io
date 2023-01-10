@@ -1,0 +1,94 @@
+﻿/*comentario */
+
+body {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family:'sans-serif,Open Sans, Helvetica';
+    margin: 0;
+}
+
+header {
+    padding: 0.5%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 6% auto;
+    align-items: center;
+}
+
+
+nav {
+    flex: 50%;
+    /*color de la caja entera del menu */
+    text-align: right;
+}
+
+nav a {
+    background-color: white;
+    /*color de fondo de las mini cajas del menu */
+    padding: 1%;
+    color: black;
+    text-decoration: none;
+    /*quito el subrayado */
+    font-weight: bold;
+    /*peso de la fuente */
+    /*línea blanca el grosor a la izquierda es igual al color del texto*/
+    margin-right: 2%;
+}
+
+header a:hover {
+    border-bottom: 2px solid rosybrown;
+}
+
+#logo {
+    max-width: 80px;/*tamaño del logo */
+    min-width: 60px;
+}
+
+#logo img:hover{
+    
+    background-color: rosybrown;
+}
+
+
+.uea {
+    text-decoration: none;
+}
+
+#social {
+  
+    background-color: transparent;
+    width: 25px;
+    height: 100px;
+    padding: 1%;
+    position: fixed; /*Importante para dejar fijo */
+    right: 2%;
+    /*en el lado derecho */
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+}
+
+#social a {
+    margin-bottom: 20%;
+}
+
+#social img {
+    width: 25px;
+}
+
+
+@media (max-width: 900px) {
+    #social {
+        background-color: rgba(255, 255, 255, 0.2);
+     
+        
+    }
+  
+    }
+}
+
+
+

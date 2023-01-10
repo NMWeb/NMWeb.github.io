@@ -1,0 +1,80 @@
+/*comentario */
+html{
+    height: 100%;
+}
+body {
+    
+    
+    height: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+  
+}
+
+
+p {
+    font-size: 1em;
+}
+
+img {
+    position: relative;
+}
+
+section {
+   
+    padding: 0 10%;
+}
+
+#seccionuno {
+    background-color: white;
+    /*contenedoruno fondo blanco */
+    color: black;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 2% 20%;
+}
+
+#seccionuno h1 {
+    color: black;
+}
+
+#seccionuno p {
+    color: #000;
+    padding: 0% 5%;
+}
+
+#seccionuno img {
+    width: 30%;
+
+}
+#enlace{
+    color:rosybrown;
+    font-weight: bond;
+}
+#enlace:visited{
+    color:black;
+}
+#boton{
+     color: white;
+    margin-top: 1%;
+
+    background-color: black;
+    /*le añado una cajita*/
+    padding: 0.5%;
+    border-radius: 0.5em;
+    /*cajita bordes redondos*/
+    position: absolute;
+    text-decoration: none;
+    /*le quito el subrayado al texto de la cajita*/
+}
+#boton:hover{
+    background-color:rosybrown;
+}/*cuando pasa por encima el ratón me cambia de color*/
+
+@media (max-width: 900px) {
+ .container {
+        display: block;
+    }
+}
+

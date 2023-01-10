@@ -1,0 +1,166 @@
+@import url("https://fonts.google.com/specimen/Bebas+Neue");
+
+/* Reset. */
+* {
+    box-sizing: border-box;
+}
+ html{
+    height: 100%;
+}
+body {
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: 'sans-serif,Open Sans, Helvetica';
+}
+
+h1{
+	font-family:'Bebas Neue';
+	font-size:85px;
+}
+
+#hblanco {
+    color: white;
+	
+}
+
+
+/* Panels. */
+.splitview {
+    position: relative;
+    width: 100%;
+    min-height: 45vw;
+    overflow: hidden;
+}
+
+.panel {
+    position: absolute;
+    width: 100vw;
+    min-height: 45vw;
+    overflow: hidden;
+}
+
+    .panel .content {
+        position: absolute;
+        width: 100vw;/*100vw*/
+        min-height: 100%;/*45vw*/
+        color: black;
+    }
+
+    .panel .description {
+        width: 20%;
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    .panel img {
+        /*box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);*//*Borde sombreado*/
+        width: 50%;/* Tocamos el tamaño de la imagen */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+.bottom {
+    background-color: white;
+    z-index: 1;
+}
+
+    .bottom .description {
+        right: 5%;
+    }
+
+.top {
+    background-color:black;
+    z-index: 2;
+    width: 50vw;
+
+    /*-webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);*/
+}
+
+    .top .description {
+        left: 5%;
+    }
+
+/* Handle. */
+.handle {
+    height: 100%;/* 100% */
+    position: absolute;
+    display:block;/* block */
+    background-color: transparent;
+    width: 5px;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+}
+
+/* Skewed. */
+.skewed .handle {
+    top: 50%;/* 50% */
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;/* 200% */
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    transform-origin: top;
+}
+
+.skewed .top {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+.skewed .top .content {
+    transform: skew(30deg);
+    margin-left: 1000px;
+}
+
+
+.moviltablet {
+    background-image: url(Img/fondo-movil-tablet.png);
+    background-size: cover;
+    background-position: center;
+    padding: 30% 0;
+    display: none;
+    grid-template-columns: auto auto;
+}
+
+
+
+
+
+/* Responsive. */
+@media (max-width: 900px) {
+    body {
+        font-size: 75%;
+    }
+    
+    .splitview {
+        display: none;
+    }
+    
+    .moviltablet {
+        display: grid;
+		color:rosybrown;
+		
+}
+	h1{
+		font-size: 500%;
+	}
+
+    }
+}
+
+

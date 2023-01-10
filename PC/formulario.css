@@ -1,0 +1,79 @@
+/*comentario background-image: url(Img/mari-negra.jpg)!important;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+
+body {
+
+	background-image: url(Img/mariposa-vectorial.png);
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+
+
+}
+
+
+form div {
+	color: rosybrown;
+	padding: 4%;
+	padding-top: 10%;
+	margin: 0 35%;
+	display: flex;
+	flex-direction: column;
+	/*Se puede oner con grid-row-gap */
+}
+
+label {
+	text-align: left;
+	margin-bottom: 0.25%;
+	margin-top: 0.25%;
+}
+
+input {
+	padding: 1%;
+}
+
+textarea {
+	padding: 2%;
+}
+
+#botonformulario {
+	background-color: rosybrown;
+	padding: 3%;
+	width: 50%;
+	margin: 3% auto;
+	font-weight: bold;
+	font-size: 0.75em;
+	border-radius: 20px;
+	border-color: transparent;
+}
+
+#politica {
+	color: black;
+	align-self: center;
+}
+
+/* Responsive. */
+@media (max-width: 900px) {
+	body {
+		font-size: 80%;
+
+	}
+	
+
+	form div {
+		color: rosybrown;
+		padding: 4%;
+		padding-top: 10%;
+		margin: 0 25%;
+		display: flex;
+		flex-direction: column;
+	}
+
+
+
+
+
+}

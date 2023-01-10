@@ -1,0 +1,169 @@
+﻿
+html {
+    height: 100%;
+}
+
+body {
+    font-family:'sans-serif,Open Sans, Helvetica';
+    margin: 0;
+    height: 100%;
+    max-height: 100%;
+    color: #fff;
+	background-color: white;
+}
+
+.frame {
+    position: fixed;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.box-galery {
+    width: 100%;
+    height: 100%;
+    grid-gap: 5px;
+    position: absolute;
+    z-index: 1;
+}
+
+.box-galery > [type=checkbox] {
+    display: none;
+}
+
+.box-galery .imgs {
+    --zi: calc(100% /3 - 3px);
+    width: var(--zi);
+    height: var(--zi/3);
+    object-fit: cover;
+    transition: 1s;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+}
+
+.box-galery .img4 {
+    background-image: url("Img/mundo.png");
+    top: 0;
+    bottom: 0;
+}
+
+.box-galery .img5 {
+    background-image: url("Img/carto.png");
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.box-galery .img6 {
+    background-image: url("Img/Design.png");
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+#btn4:checked ~ .img4 {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+#btn5:checked ~ .img5 {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+#btn6:checked ~ .img6 {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+
+
+nav {
+    flex: 50%;
+    background-color: white;
+    /*color de la caja entera del menu */
+    padding: 1%;
+    padding-right: 2%;
+    color: #fff;
+    text-align: right;
+}
+
+nav a {
+    background-color: white;
+    /*color de fondo de las mini cajas del menu */
+    padding: 1%;
+    color: black;
+    text-decoration: none;
+    /*quito el subrayado */
+    font-weight: bold;
+    /*peso de la fuente */
+    /*línea blanca el grosor a la izquierda es igual al color del texto*/
+    margin-right: 2%;
+}
+
+header a:hover {
+    border-bottom: 2px solid rosybrown;
+}
+
+#logo {
+    float: left;
+    max-width: 80px;/*tamaño del logo */
+    min-width: 60px;
+    margin-left: 2%;
+}
+
+#logo img:hover{
+    
+    background-color: rosybrown;
+}
+
+
+.uea {
+    border-bottom: 4px solid rosybrown;
+    text-decoration: none;
+}
+
+#social {
+  
+    background-color: transparent;
+    width: 50px;
+    height: 150px;
+    padding: 1%;
+    position: fixed; /*Importante para dejar fijo */
+    right: 4%;
+    /*en el lado derecho */
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#social a {
+    margin-bottom: 20%;
+}
+
+#social img {
+    width: 30px;
+}
+
+
+/*# sourceMappingURL=style.css.map */
